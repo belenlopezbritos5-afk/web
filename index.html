@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Belén López</title>
+
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;700;800&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- ░░░░░ NAV ░░░░░ -->
+<header id="inicio">
+    <nav class="barra-navegacion nav-top" id="navbar">
+
+        <a href="#inicio" class="logo-link">
+            <img src="img/logo.svg" alt="Logo" class="logo"/>
+        </a>
+
+        <div class="nav-links" id="navLinks">
+
+            <a class="division" href="#inicio">Inicio</a>
+
+            <!-- BOTÓN PROYECTOS + DROPDOWN -->
+            <div class="dropdown">
+                <a class="division dropdown-btn">Proyectos ▾</a>
+
+                <div class="dropdown-content">
+                    <a href="#proyectos" data-proyecto="identidad">Identidad</a>
+                    <a href="#proyectos" data-proyecto="afiches">Afiches</a>
+                    <a href="#proyectos" data-proyecto="senaletica">Señalética</a>
+                    <a href="#proyectos" data-proyecto="empaques">Empaques</a>
+                    <a href="#proyectos" data-proyecto="infografias">Infografías</a>
+                    <a href="#proyectos" data-proyecto="ilustraciones">Ilustraciones</a>
+                </div>
+            </div>
+
+            <a class="division" href="#sobre-mi">Sobre mí</a>
+            <a class="division" id="abrirContacto">Contacto</a>
+        </div>
+    </nav>
+
+    <!-- BANNER -->
+    <div class="portada">
+        <img class="banner-img distortion-img" src="img/banner.png" alt="Banner principal">
+    </div>
+</header>
+
+<!-- ░░░░░ PROYECTOS ░░░░░ -->
+<section id="proyectos" class="proyectos">
+
+    <div class="stack">
+
+        <!-- IDENTIDAD -->
+        <article class="banner-card" data-proyecto="identidad" style="--accent: var(--tallow);">
+
+            <div class="banner-media">
+                <img src="img/proyectos/brand.png" alt="Identidad de marca">
+            </div>
+
+            <div class="banner-overlay">
+                <div class="overlay-inner">
+                    <h3 class="banner-title">Identidad de Marca</h3>
+                    <p class="banner-intro">Manual de identidad, sistema visual y aplicaciones.</p>
+                    <a class="btn-outline abrir-proyecto">Más info</a>
+                </div>
+            </div>
+
+            <div class="banner-footer">
+                <span class="badge">Branding</span>
+                <span class="slug">/ Identidad</span>
+            </div>
+        </article>
+
+        <!-- AFICHES -->
+        <article class="banner-card" data-proyecto="afiches" style="--accent: var(--catalina);">
+
+            <div class="banner-media">
+                <img src="img/proyectos/afiches.png" alt="Afiches">
+            </div>
+
+            <div class="banner-overlay">
+                <div class="overlay-inner">
+                    <h3 class="banner-title">Afiches Publicitarios</h3>
+                    <p class="banner-intro">Composición, color y comunicación visual.</p>
+                    <a class="btn-outline abrir-proyecto">Más info</a>
+                </div>
+            </div>
+
+            <div class="banner-footer">
+                <span class="badge">Posters</span>
+                <span class="slug">/ Afiches</span>
+            </div>
+        </article>
+
+        <!-- SEÑALETICA -->
+        <article class="banner-card" data-proyecto="senaletica" style="--accent: var(--iceberg);">
+
+            <div class="banner-media">
+                <img src="img/proyectos/señaletica.png" alt="Señalética">
+            </div>
+
+            <div class="banner-overlay">
+                <div class="overlay-inner">
+                    <h3 class="banner-title">Señalética</h3>
+                    <p class="banner-intro">Sistema de orientación y señalización.</p>
+                    <a class="btn-outline abrir-proyecto">Más info</a>
+                </div>
+            </div>
+
+            <div class="banner-footer">
+                <span class="badge">Wayfinding</span>
+                <span class="slug">/ Señalética</span>
+            </div>
+        </article>
+        <!-- EMPAQUES -->
+        <article class="banner-card" data-proyecto="empaques" style="--accent: var(--tallow);">
+
+            <div class="banner-media">
+                <img src="img/proyectos/empaques.png" alt="Empaques">
+            </div>
+
+            <div class="banner-overlay">
+                <div class="overlay-inner">
+                    <h3 class="banner-title">Empaques</h3>
+                    <p class="banner-intro">Packaging sustentable y editorial.</p>
+                    <a class="btn-outline abrir-proyecto">Más info</a>
+                </div>
+            </div>
+
+            <div class="banner-footer">
+                <span class="badge">Packaging</span>
+                <span class="slug">/ Empaques</span>
+            </div>
+        </article>
+
+        <!-- INFOGRAFÍAS -->
+        <article class="banner-card" data-proyecto="infografias" style="--accent: var(--catalina);">
+
+            <div class="banner-media">
+                <img src="img/proyectos/infografias.png" alt="Infografías">
+            </div>
+
+            <div class="banner-overlay">
+                <div class="overlay-inner">
+                    <h3 class="banner-title">Infografías</h3>
+                    <p class="banner-intro">Datos claros y visuales.</p>
+                    <a class="btn-outline abrir-proyecto">Más info</a>
+                </div>
+            </div>
+
+            <div class="banner-footer">
+                <span class="badge">Editorial</span>
+                <span class="slug">/ Infografías</span>
+            </div>
+        </article>
+
+        <!-- ILUSTRACIONES -->
+        <article class="banner-card" data-proyecto="ilustraciones" style="--accent: var(--tallow);">
+
+            <div class="banner-media">
+                <img src="img/proyectos/ilustracion.png" alt="Ilustraciones">
+            </div>
+
+            <div class="banner-overlay">
+                <div class="overlay-inner">
+                    <h3 class="banner-title">Ilustraciones</h3>
+                    <p class="banner-intro">Estilo personal y desarrollo visual.</p>
+                    <a class="btn-outline abrir-proyecto">Más info</a>
+                </div>
+            </div>
+
+            <div class="banner-footer">
+                <span class="badge">Arte</span>
+                <span class="slug">/ Ilustraciones</span>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+<!-- ░░░░░ SOBRE MÍ (MINIMAL) ░░░░░ -->
+<section id="sobre-mi" class="sobre-mi-simple">
+
+    <div class="sobre-simple-contenedor">
+        <!-- TU IMAGEN SOBRE MI (NO ALTERO EL NOMBRE, USO EL QUE VOS PONGAS EN TU CARPETA) -->
+        <img src="img/sobremi.png" alt="Sobre mí" class="sobre-simple-img">
+
+        <!-- BOTÓN DE CONTACTO -->
+        <a class="btn-contacto" id="btnContacto">Contáctame</a>
+    </div>
+
+</section>
+
+<!-- ░░░░░ CONTACTO ░░░░░ -->
+<section class="contacto" id="contacto" style="display:none;">
+    <div class="footer">
+        <h2>Contacto</h2>
+        <p>Podés escribirme a:</p>
+        <p><strong>belenlopezdesign@gmail.com</strong></p>
+
+        <ul class="social-links">
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Behance</a></li>
+        </ul>
+    </div>
+</section>
+
+<!-- ░░░░░ MODAL PROYECTOS ░░░░░ -->
+<div class="modal-proyecto" id="modal-proyecto">
+    <div class="modal-contenido">
+
+        <button class="cerrar-modal" id="cerrarModal">×</button>
+
+        <div class="imagen-container" id="contenedor-secciones">
+            <!-- Imágenes que se cargarán dinámicamente -->
+        </div>
+
+        <div class="modal-nav">
+            <button class="modal-btn" id="btnAnterior">← Proyecto anterior</button>
+            <button class="modal-btn" id="btnSiguiente">Siguiente proyecto →</button>
+        </div>
+
+    </div>
+</div>
+
+<!-- ░░░░░ SCRIPT ░░░░░ -->
+<script>
+/* ============================
+   CONTACTO
+============================ */
+const btnContacto = document.getElementById("btnContacto");
+const contacto = document.getElementById("contacto");
+
+btnContacto?.addEventListener("click", () => {
+    contacto.style.display = "block";
+    contacto.scrollIntoView({ behavior: "smooth" });
+});
+
+/* ============================
+   NAVBAR SCROLL BEHAVIOR
+============================ */
+const navbar = document.getElementById("navbar");
+const navLinks = document.getElementById("navLinks");
+
+window.addEventListener("scroll", () => {
+    const y = window.scrollY;
+
+    navbar.classList.remove("nav-top", "nav-mid", "nav-away");
+
+    if (y < window.innerHeight * 0.4) {
+        navbar.classList.add("nav-top");
+    } else if (y < window.innerHeight * 1.6) {
+        navbar.classList.add("nav-mid");
+    } else {
+        navbar.classList.add("nav-away");
+    }
+});
+
+/* ============================
+   VOLVER ARRIBA AL RECARGAR
+============================ */
+window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+};
+
+/* ============================
+   EFECTO SUAVE DEL BANNER
+============================ */
+const banner = document.querySelector(".distortion-img");
+
+if (banner) {
+    banner.addEventListener("mousemove", () => {
+        banner.style.transform = "scale(1.04)";
+        banner.style.filter = "blur(1.2px) contrast(1.05)";
+    });
+
+    banner.addEventListener("mouseleave", () => {
+        banner.style.transform = "scale(1)";
+        banner.style.filter = "blur(0)";
+    });
+
+    window.addEventListener("load", () => {
+        banner.classList.add("loaded");
+    });
+}
+
+/* ============================
+   ANIMACIONES (IntersectionObserver)
+============================ */
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('inview');
+    });
+}, { threshold: 0.2 });
+
+document.querySelectorAll('.portada, .banner-card, .contacto, .sobre-mi-simple')
+    .forEach(el => observer.observe(el));
+
+/* ============================
+   MODAL DE PROYECTOS
+============================ */
+/* ============================
+   MODAL DE PROYECTOS
+============================ */
+const modal = document.getElementById("modal-proyecto");
+const contenedor = document.getElementById("contenedor-secciones");
+const cerrarModal = document.getElementById("cerrarModal");
+const btnAnterior = document.getElementById("btnAnterior");
+const btnSiguiente = document.getElementById("btnSiguiente");
+
+let proyectos = ["identidad", "afiches", "senaletica", "empaques", "infografias", "ilustraciones"];
+let indiceActual = 0;
+
+/* MAPPING FINAL CON DOS IMÁGENES EN SEÑALETICA */
+const mapping = {
+    identidad: ["img/proyectos/ori.png"],
+    afiches: ["img/proyectos/afiches.png"],
+    
+    /* SEÑALETICA — 2 IMÁGENES REALES */
+    senaletica: [
+        "img/proyectos/señaletica1.jpg",
+        "img/proyectos/señaletica2.jpg"
+    ],
+
+    empaques: ["img/proyectos/empaques.png"],
+    infografias: ["img/proyectos/infografia.png"],
+    ilustraciones: ["img/proyectos/ilustraciones.png"]
+};
+
+
+/* FUNCIÓN ABRIR MODAL */
+function abrirModal(tipo) {
+
+    navbar.classList.add("nav-modal");
+    navLinks.style.display = "none";
+
+    indiceActual = proyectos.indexOf(tipo);
+    contenedor.innerHTML = "";
+
+    mapping[tipo].forEach(src => {
+        const img = document.createElement("img");
+        img.src = src;
+        img.style.borderRadius = "18px";
+        img.style.boxShadow = "0 6px 20px rgba(0,0,0,.15)";
+        img.style.display = "block";
+        img.style.margin = "0 auto 22px";
+        img.style.maxWidth = "80%";
+        contenedor.appendChild(img);
+    });
+
+    modal.classList.add("activo");
+    document.body.style.overflow = "hidden";
+}
+
+/* ABRIR DESDE LOS BOTONES "Más info" */
+document.querySelectorAll(".abrir-proyecto").forEach(btn => {
+    btn.addEventListener("click", e => {
+        const card = e.target.closest(".banner-card");
+        const tipo = card.getAttribute("data-proyecto");
+        abrirModal(tipo);
+    });
+});
+
+/* CERRAR MODAL */
+cerrarModal.addEventListener("click", () => {
+    modal.classList.remove("activo");
+    document.body.style.overflow = "auto";
+    navbar.classList.remove("nav-modal");
+    navLinks.style.display = "flex";
+});
+
+/* SIGUIENTE PROYECTO */
+btnSiguiente.addEventListener("click", () => {
+    indiceActual = (indiceActual + 1) % proyectos.length;
+    abrirModal(proyectos[indiceActual]);
+});
+
+/* ANTERIOR PROYECTO */
+btnAnterior.addEventListener("click", () => {
+    indiceActual = (indiceActual - 1 + proyectos.length) % proyectos.length;
+    abrirModal(proyectos[indiceActual]);
+});
+
+/* ESCAPE PARA CERRAR */
+document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+        modal.classList.remove("activo");
+        document.body.style.overflow = "auto";
+        navbar.classList.remove("nav-modal");
+        navLinks.style.display = "flex";
+    }
+});
+
+
+/* ============================
+   DROPDOWN ESTABLE (CLICK + HOVER)
+============================ */
+const dropdown = document.querySelector('.dropdown');
+const dropdownBtn = dropdown.querySelector('.dropdown-btn');
+const dropdownContent = dropdown.querySelector('.dropdown-content');
+
+/* ABRIR/CERRAR CON CLICK */
+dropdownBtn.addEventListener("click", (event) => {
+    event.preventDefault();
+    dropdown.classList.toggle("open");
+});
+
+/* CERRAR SI CLICKEAS AFUERA */
+document.addEventListener("click", (event) => {
+    if (!dropdown.contains(event.target)) {
+        dropdown.classList.remove("open");
+    }
+});
+
+/* ============================
+   DROPWDOWN → SCROLL A TARJETA
+============================ */
+document.querySelectorAll('.dropdown-content a').forEach(link => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault();
+
+        const tipo = link.getAttribute("data-proyecto");
+        if (!tipo) return;
+
+        const card = document.querySelector(`.banner-card[data-proyecto="${tipo}"]`);
+
+        /* CIERRE DEL MENÚ */
+        dropdown.classList.remove("open");
+
+        /* SCROLL */
+        card.scrollIntoView({
+            behavior: "smooth",
+            block: "center"
+        });
+    });
+});
+
+</script>
+</body>
+</html>
